@@ -72,8 +72,11 @@ import (
 // 	}
 // }
 
-func Testunit(t *testing.T) {
-	output := initializeRouter()
-	expectedoutput := nil
+func TestUnit(t *testing.T) {
+	output := Sample()
+	expectedoutput := "failed to connect database"
+	if expectedoutput != output {
+		t.Fail()
+	}
 
 }

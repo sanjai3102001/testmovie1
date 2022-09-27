@@ -66,3 +66,9 @@ func main() {
 	InitialMigration()
 	initializeRouter()
 }
+
+// Sample function to print a line
+func Sample() string {
+	out := "failed to connect database"
+	return out
+}
